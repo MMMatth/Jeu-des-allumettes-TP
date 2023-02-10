@@ -8,9 +8,12 @@
  * @copyright Copyright (c) 2023
  * 
  */
+#ifndef _TABVAR2_H
+#define _TABVAR2_H
 
 #include <stdio.h>
 #include <stdlib.h>
+
 
 
 
@@ -86,3 +89,5 @@ int remove_t(tab_t *p);
  * \return int la valeur a l'indice i ou 0 si echec
  */
 int get(tab_t *p, int i);
+
+#endif
