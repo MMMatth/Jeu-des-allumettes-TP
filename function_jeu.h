@@ -29,21 +29,8 @@ int randint(int min, int max);
  */
 void fill_jeu(tab_t *jeu);
 
-/**
- * \brief fonction qui permet de savoir si le joueur a gagné ou non
- * 
- * \param jeu 
- * \return int 1 si le joueur a gagné, 0 sinon
- */
-int qui_gagne(tab_t *jeu);
 
-/**
- * \brief procedure qui permet d'afficher le gagnant en fonction de qui_gagne()
- * 
- * \param jeu 
- * \param numero_joueur 
- */
-void affiche_qui_gagne(tab_t *jeu, int numero_joueur);
+int fin_jeu(tab_t *jeu, int numero_joueur);
 
 /**
  * \brief procedure qui permet d'afficher le jeu sous le format suivant :
@@ -53,9 +40,16 @@ void affiche_qui_gagne(tab_t *jeu, int numero_joueur);
  */
 void print_jeu(tab_t *jeu);
 
+/**
+ * \brief procedure qui permet de supprimer le nombre de batton que le joueur a choisi
+ * 
+ * \param jeu 
+ * \param batton 
+ */
+void supr_batton(tab_t *jeu, int batton);
 
 /**
- * \brief procedure qui permet faire les manches (c'est la fonction principale)
+ * \brief procedure qui permet gerer les manches en fonction du joueur (c'est la fonction principale)
  * 
  * \param jeu 
  * \param numero_joueur // numero du joueur qui doit jouer
