@@ -1,9 +1,7 @@
 {
     "files.associations": {
-        "stdio.h": "c",
-        "tabvar2.h": "c",
         "function_jeu.h": "c",
-        "stdlib.h": "c",
-        "time.h": "c"
+        "tabvar2.h": "c",
+        "stdio.h": "c"
     }
 }

@@ -1,6 +1,7 @@
-#include "tabVar2.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "tabvar2.h"
 
 
 tab_t* make(int tmax){

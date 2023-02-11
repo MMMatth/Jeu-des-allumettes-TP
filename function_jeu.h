@@ -9,11 +9,8 @@
  * 
  */
 
-#ifndef _FUNCTION_JEU_H
-#define _FUNCTION_JEU_H
 #include <stdio.h>
 #include <stdlib.h>
-#include "biblio/tabVar2.h"
 
 
 /**
@@ -64,5 +61,3 @@ void print_jeu(tab_t *jeu);
  * \param numero_joueur // numero du joueur qui doit jouer
  */
 void manche(tab_t *jeu, int numero_joueur);
-
-#endif

@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2023
  * 
  */
-#ifndef _TABVAR2_H
-#define _TABVAR2_H
+#ifndef TABVAR2_H
+#define TABVAR2_H
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "biblio/tabVar2.h"
+#include "tabvar2/tabvar2.h"
 #include "function_jeu.h"
 
 

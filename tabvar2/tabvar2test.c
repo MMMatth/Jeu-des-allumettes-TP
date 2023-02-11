@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <stdbool.h>
-#include "tabVar2.h"
+#include "tabvar2.h"
 
 int main(){
     tab_t *tableau = make(10);
