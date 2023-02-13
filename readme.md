@@ -1,4 +1,8 @@
-# Jeux des allumettes
+# Jeux avec tableau variable
+## Présentation du projet
+Ce projet a pour but de créer une bibliothèque permettant de simplifier la programmation de jeux utilisant des tableaux de taille variable. Cette bibliothèque sera utilisée pour implémenter le jeu des allumettes. Le projet est réalisé dans le cadre du cours de programmation en C de l'Université de Lorraine.
+
+## Jeux des allumettes
 <!-- presentation du jeux -->
 ## Présentation du jeux
 Le jeu des allumettes est un jeu de réflexion combinatoire se jouant à deux joueurs. Le jeu se joue avec n allumettes au départ. Les joueurs jouent à tour de rôle. À son tour, un joueur doit enlever entre une et trois allumettes. Le joueur qui prend la dernière allumette a perdu.

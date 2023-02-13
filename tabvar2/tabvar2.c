@@ -51,6 +51,16 @@ int remove_t(tab_t *p){
     return 0; // cas d'erreur
 }
 
+int remove_t_to(tab_t *p, int i){
+    for (int j = p->size ; j > i ; j--){
+        p->size--;
+        if (p->size == 0){
+            return 0; // cas d'erreur
+        }
+    }
+    return 1; // cas de succes
+}
+
 int get(tab_t* p, int i){
     if (i < p->size){
         return p->tab[i];
