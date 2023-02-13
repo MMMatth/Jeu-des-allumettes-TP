@@ -16,7 +16,7 @@ Si un joueur touche une case occupée par un navire ennemi, il peut continuer à
 Le premier joueur à couler tous les navires ennemis remporte la partie.
 
 
-### Nouvelle fonctionnalité dans la bibliothèque tabvar2.h
+## Nouvelle fonctionnalité dans la bibliothèque tabvar2.h
 - une fonction remove_t_to pour enlever plusieur elements de la liste 
 -
 
