@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
             }
         }
         // On retire les allumettes
-        remove_t_to(jeu, n_allumettes - choix);
+        rmv_to(jeu, n_allumettes - choix);
         n_allumettes -= choix;
         
         // Changement de joueur

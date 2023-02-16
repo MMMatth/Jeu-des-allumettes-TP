@@ -13,7 +13,7 @@ int main(){
     printf("\nLe tableau fait %d de longueur", len(tableau));
     printf("\nLe tableau fait %d de longueur maximum", len_max(tableau));
     printf("\nOn supprime un element du tableau :  ");
-    remove_t(tableau);
+    rmv(tableau);
     print(tableau);
     printf("\n L'element a l'index 3 est %d\n", get(tableau, 3));
 }

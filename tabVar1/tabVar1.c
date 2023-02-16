@@ -37,7 +37,7 @@ int add(tab_t *p, int v){
     return 0; // cas d'erreur
 }
 
-int remove_t(tab_t *p){
+int rmv(tab_t *p){
     if (p->size > 0){
         p->size--;
         return 1;

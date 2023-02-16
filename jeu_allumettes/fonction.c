@@ -11,9 +11,8 @@ int randint(int min, int max){
 
 void fill_jeu(tab_t *jeux, int n_allumettes){
     int allumette_piegee = randint(0, n_allumettes - 1);
-    for (int i = 0; i < n_allumettes; i++) {
-        add(jeux, (i == allumette_piegee) ? 2 : 1);
-    }
+    fill_tab(jeux, 1, n_allumettes);
+    jeux->tab[allumette_piegee] = 2;
 }
 
 void afficher_jeu(tab_t *jeux, int n_allumettes){

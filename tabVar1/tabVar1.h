@@ -76,7 +76,7 @@ int add(tab_t *p, int val);
  * \param \a p 
  * \return int 1 si la suppression a reussi, 0 sinon.
  */
-int remove_t(tab_t *p);
+int rmv(tab_t *p);
 
 /**
  * \brief Retourne la valeur a l'indice i.

@@ -43,7 +43,16 @@ int add(tab_t *p, int v){
     return 0; // cas d'erreur
 }
 
-int remove_t(tab_t *p){
+
+void fill_tab(tab_t *p, int v, int n){
+    for(int i=0; i < n && i < p->size_max; i++){
+        add(p, v); // ajoute la valeur
+    }
+}
+
+
+
+int rmv(tab_t *p){
     if (p->size > 0){
         p->size--;
         return 1;
@@ -51,7 +60,7 @@ int remove_t(tab_t *p){
     return 0; // cas d'erreur
 }
 
-int remove_t_to(tab_t *p, int i){
+int rmv_to(tab_t *p, int i){
     for (int j = p->size ; j > i ; j--){
         p->size--;
         if (p->size == 0){

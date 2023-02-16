@@ -12,7 +12,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 /**
  * \brief fonction qui permet de choisir un nombre entier aléatoire entre 2 nombres
  * 
