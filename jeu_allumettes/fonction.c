@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 #include "../tabvar2/tabvar2.h"
 #include "fonction.h"
@@ -23,4 +24,14 @@ void afficher_jeu(tab_t *jeux, int n_allumettes){
         }
         printf("\n");
     }
+}
+
+void save_score(int n_joueur){
+    FILE *fichier = fopen("score.txt", "a");
+    time_t now = time(NULL);
+    struct tm *local = localtime(&now);
+    char timestamp[80];
+    strftime(timestamp, 80, "%c", local);
+    fprintf(fichier, "Le joueur %d a perdu | %s\n", n_joueur, timestamp);
+    fclose(fichier);
 }

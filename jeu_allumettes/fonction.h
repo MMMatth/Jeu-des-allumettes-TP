@@ -49,3 +49,7 @@ void fill_jeu(tab_t *jeux, int n_allumettes);
  * | | | | | | | | | | | 
  */
 void afficher_jeu(tab_t *jeux, int n_allumettes);
+
+
+
+void save_score(int n_joueur);

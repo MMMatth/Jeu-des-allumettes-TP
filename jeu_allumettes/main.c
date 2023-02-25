@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <time.h>
 
 #include "../tabvar2/tabvar2.h"
@@ -8,9 +9,10 @@
 int main(int argc, char *argv[]) {
     // Initialisation des variables
     int n_allumettes = atoi(argv[1]);
-    tab_t* jeu = make(n_allumettes);
+    tab_t* jeu = make(n_allumettes * 2 );
     int joueur_actuel = 1;
     int choix;
+    bool jeu_piege = false;
 
     srand(time(NULL)); // initialisation du générateur de nombres aléatoires
     
@@ -31,16 +33,18 @@ int main(int argc, char *argv[]) {
         }while (choix < 1 || choix > 3);
 
         
+        n_allumettes -= choix;
         // On vérifie si l'jeu est piégée
-        for (int i = 0; i < choix; i++) {
+        for (int i = 0; i < choix && !jeu_piege ; i++) {
             if (get(jeu, n_allumettes - i - 1) == 2) {
-                printf("Vous avez pris une allumette piegee ! Vous prenez deux fois plus d'allumettes\n");
-                choix *= 2;
+                printf("Vous avez pris une allumette piegee ! Le nombre d'allumette est multiplié par 2\n");
+                n_allumettes = ( n_allumettes * 2 );
+                jeu_piege = true;
             }
         }
         // On retire les allumettes
-        rmv_to(jeu, n_allumettes - choix);
-        n_allumettes -= choix;
+        rmv_to(jeu, n_allumettes);
+        
         
         // Changement de joueur
         joueur_actuel = (joueur_actuel == 1) ? 2 : 1;
@@ -56,5 +60,7 @@ int main(int argc, char *argv[]) {
     free(jeu->tab);
     free(jeu);
     
+    save_score(joueur_actuel);
+
     return EXIT_SUCCESS;
 }
