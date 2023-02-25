@@ -19,6 +19,14 @@ int main(int argc, char *argv[]) {
     // Initialisation du tableau d'allumettes
     fill_jeu(jeu, n_allumettes);
     
+    do{
+        printf("Voulez vous voir les regles ? (0/1) ");
+        scanf("%d", &choix);
+    }while (choix < 0 || choix > 1);
+    if (choix == 1){afficher_regle();}
+
+
+
     // Boucle principale
     while (n_allumettes > 1) {
         printf("--------------------\n");
@@ -32,19 +40,20 @@ int main(int argc, char *argv[]) {
             scanf("%d", &choix);
         }while (choix < 1 || choix > 3);
 
-        
+        // On re calcule le nombre d'allumettes restantes
         n_allumettes -= choix;
+
         // On vérifie si l'jeu est piégée
         for (int i = 0; i < choix && !jeu_piege ; i++) {
             if (get(jeu, n_allumettes - i - 1) == 2) {
                 printf("Vous avez pris une allumette piegee ! Le nombre d'allumette est multiplié par 2\n");
-                n_allumettes = ( n_allumettes * 2 );
-                jeu_piege = true;
+                n_allumettes = ( n_allumettes * 2 ); // On multiplie le nombre d'allumettes par 2
+                jeu_piege = true; // On met la variable jeu_piege à true pour ne pus prendre en compte les allumettes piégées
             }
         }
+
         // On retire les allumettes
         rmv_to(jeu, n_allumettes);
-        
         
         // Changement de joueur
         joueur_actuel = (joueur_actuel == 1) ? 2 : 1;
@@ -60,6 +69,7 @@ int main(int argc, char *argv[]) {
     free(jeu->tab);
     free(jeu);
     
+    // Sauvegarde du score dans le fichier score.txt
     save_score(joueur_actuel);
 
     return EXIT_SUCCESS;

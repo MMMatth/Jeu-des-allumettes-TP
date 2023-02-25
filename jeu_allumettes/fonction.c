@@ -35,3 +35,11 @@ void save_score(int n_joueur){
     fprintf(fichier, "Le joueur %d a perdu | %s\n", n_joueur, timestamp);
     fclose(fichier);
 }
+
+void afficher_regle(){
+    printf("--------------------\n");
+    printf("Le jeu des allumettes est un jeu de strategie se jouant a deux.\n");
+    printf("Le but du jeu est de ne pas prendre la derniere allumette.\n");
+    printf("A chaque tour, un joueur doit prendre entre 1 et 3 allumettes.\n");
+    printf("Le joueur qui prend la derniere allumette a perdu.\n");
+}
