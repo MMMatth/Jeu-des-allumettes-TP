@@ -20,7 +20,7 @@ Le premier joueur à couler tous les navires ennemis remporte la partie.
 ## Nouvelle fonctionnalité dans le jeux des allumettes
 - l'affichage du jeux sous la forme de batton
 - historique des perdant dans un fichier txt
-
+- j'affiche les regles du jeux si le joueur le demande
 
 ## To do list :
 - [x] Utiliser le argv
