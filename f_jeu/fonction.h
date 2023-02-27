@@ -2,7 +2,6 @@
  * \file fonction.h
  * \author Matthieu Gaudel (matthieu.gaudel9@etu.univ-lorraine.fr)
  * \brief mini bibliothèque de fonctions pour le jeu des allumettes
- * \version 0.2
  * \date 2023-02-13
  * 
  * @copyright Copyright (c) 2023
@@ -13,43 +12,48 @@
 #include <stdlib.h>
 
 /**
- * \brief fonction qui permet de choisir un nombre entier aléatoire entre 2 nombres
+ * \brief fonction qui genere un nombre entier aleatoire entre min et max
  * 
- * \param min   le nombre minimum
- * \param max  le nombre maximum
- * \return int  le nombre entier aléatoire
+ * \param min 
+ * \param max 
+ * \return int 
  * 
- * \example int nombre = randint(1, 3);
- * nombre peut valoir 1, 2 ou 3
  */
 int randint(int min, int max);
 
 /**
- * \brief fonction qui rempli le tableau jeux avec des allumettes
+ * \brief procedure qui rempli le tableau jeux avec des allumettes
  * 
  * \param jeux le tableau jeux vide
  * \param n_allumettes  le nombre d'allumettes
  * 
- * \example fill_jeu(jeux, 10);
- * le tableau jeux sera rempli de 10 allumettes dont une qui sera piegée
- * [1, 1, 1, 1, 1, 1, 1, 2, 1, 1]
  */
 void fill_jeu(tab_t *jeux, int n_allumettes);
 
 /**
- * \brief fonction qui affiche le tableau jeux
- * 
- * \param jeux le tableau jeux
- * \param n_allumettes  le nombre d'allumettes
- * 
- * \example afficher_jeu(jeux, 10);
+ * \brief procedure qui affiche le tableau jeux
+ * sous cette forme :
  * Il reste 10 allumettes
  * | | | | | | | | | | |
  * | | | | | | | | | | |
  * | | | | | | | | | | | 
+ * 
+ * \param jeux le tableau jeux
+ * \param n_allumettes  le nombre d'allumettes
+ * 
+ * 
  */
 void afficher_jeu(tab_t *jeux, int n_allumettes);
 
+/**
+ * \brief procedure qui permet d'afficher les regles
+ * 
+ */
 void afficher_regle();
 
+/**
+ * \brief procedure qui permet d'enregistrer qui a perdu dans un fichier texte
+ * 
+ * \param n_joueur 
+ */
 void save_score(int n_joueur);

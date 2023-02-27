@@ -1,5 +1,5 @@
-\hypertarget{tabvar1_8h}{}\doxysection{Référence du fichier tabvar1/tabvar1.h}
-\label{tabvar1_8h}\index{tabvar1/tabvar1.h@{tabvar1/tabvar1.h}}
+\hypertarget{tabvar1_8h}{}\doxysection{Référence du fichier C\+:/\+Users/matlo/\+Documents/worflow/\+Jeu-\/des-\/allumettes-\/\+TP/tabvar1/tabvar1.h}
+\label{tabvar1_8h}\index{C:/Users/matlo/Documents/worflow/Jeu-\/des-\/allumettes-\/TP/tabvar1/tabvar1.h@{C:/Users/matlo/Documents/worflow/Jeu-\/des-\/allumettes-\/TP/tabvar1/tabvar1.h}}
 
 
 bibliotheque pour les tableaux  
@@ -28,47 +28,30 @@ typedef struct \mbox{\hyperlink{structtab}{tab}} {\bfseries tab\+\_\+t}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$ \mbox{\hyperlink{tabvar1_8h_a5687a2c104d55ebe1c41ef217781399f}{make}} (int tmax)
-\begin{DoxyCompactList}\small\item\em Cree un tableau de taille variable. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Crée un tableau de taille variable. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{tabvar1_8h_a5846ddc7c948c175393400ecd220f946}{print}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p)
-\begin{DoxyCompactList}\small\item\em Affiche le tableau. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Affiche le contenu du tableau. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{tabvar1_8h_a349e9396042075f2ea85432b24c30f67}{len}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p)
 \begin{DoxyCompactList}\small\item\em Retourne la taille effective du tableau. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{tabvar1_8h_ae5bc055cd2b949714014cd8e3e694092}{len\+\_\+max}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p)
-\begin{DoxyCompactList}\small\item\em renvoie la longeur maximum du tableau. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Retourne la taille maximale du tableau. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{tabvar1_8h_a70733a38cb5861e3e0a5d2546fad6a2f}{add}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p, int val)
 \begin{DoxyCompactList}\small\item\em Ajoute une valeur au tableau. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{tabvar1_8h_a4389c16e185b652e828f5371e2b66063}{rmv}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p)
-\begin{DoxyCompactList}\small\item\em Supprime la derniere valeur du tableau. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Supprime la dernière valeur du tableau. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{tabvar1_8h_a841c753d0564b000cff721c736e6633b}{get}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p, int i)
-\begin{DoxyCompactList}\small\item\em Retourne la valeur a l\textquotesingle{}indice i. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Retourne la valeur à l\textquotesingle{}indice i. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Description détaillée}
 bibliotheque pour les tableaux 
 
-Bibliothèque pour les tableaux.
-
 \begin{DoxyAuthor}{Auteur}
 Matthieu Gaudel (\href{mailto:matthieu.gaudel9@etu.univ-lorraine.fr}{\texttt{ matthieu.\+gaudel9@etu.\+univ-\/lorraine.\+fr}}) 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
-0.\+1 
+0.\+1
 \end{DoxyVersion}
-\begin{DoxyDate}{Date}
-2023-\/02-\/09
-\end{DoxyDate}
-\begin{DoxyCopyright}{Copyright}
-Copyright (c) 2023
-\end{DoxyCopyright}
-\begin{DoxyAuthor}{Auteur}
-Matthieu Gaudel (\href{mailto:matthieu.gaudel9@etu.univ-lorraine.fr}{\texttt{ matthieu.\+gaudel9@etu.\+univ-\/lorraine.\+fr}}) 
-\end{DoxyAuthor}
-\begin{DoxyVersion}{Version}
-0.\+1 
-\end{DoxyVersion}
-\begin{DoxyDate}{Date}
-2023-\/02-\/09
-\end{DoxyDate}
 \begin{DoxyCopyright}{Copyright}
 Copyright (c) 2023 
 \end{DoxyCopyright}
@@ -87,17 +70,17 @@ Ajoute une valeur au tableau.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em } & \\
+{\em p} & Pointeur vers le tableau \\
+\hline
+{\em v} & Valeur à ajouter \\
 \hline
 \end{DoxyParams}
-a p 
-\begin{DoxyParams}{Paramètres}
-{\em } & \\
-\hline
-\end{DoxyParams}
-a val \begin{DoxyReturn}{Renvoie}
-int 1 si l\textquotesingle{}ajout a reussi, 0 sinon. 
+\begin{DoxyReturn}{Renvoie}
+int 1 si l\textquotesingle{}ajout a réussi, 0 sinon.
 \end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Il ne faut pas que le tableau soit plein. 
+\end{DoxyPrecond}
 \mbox{\Hypertarget{tabvar1_8h_a841c753d0564b000cff721c736e6633b}\label{tabvar1_8h_a841c753d0564b000cff721c736e6633b}} 
 \index{tabvar1.h@{tabvar1.h}!get@{get}}
 \index{get@{get}!tabvar1.h@{tabvar1.h}}
@@ -106,21 +89,21 @@ int 1 si l\textquotesingle{}ajout a reussi, 0 sinon.
 
 
 
-Retourne la valeur a l\textquotesingle{}indice i. 
+Retourne la valeur à l\textquotesingle{}indice i. 
 
 
 \begin{DoxyParams}{Paramètres}
-{\em } & \\
+{\em p} & Un pointeur vers le tableau. \\
+\hline
+{\em i} & L\textquotesingle{}indice de la valeur à récupérer.\\
 \hline
 \end{DoxyParams}
-a p \+: le tableau. 
-\begin{DoxyParams}{Paramètres}
-{\em } & \\
-\hline
-\end{DoxyParams}
-a i \+: l\textquotesingle{}indice. \begin{DoxyReturn}{Renvoie}
-int la valeur a l\textquotesingle{}indice i ou 0 si echec 
+\begin{DoxyReturn}{Renvoie}
+La valeur à l\textquotesingle{}indice i ou 0 en cas d\textquotesingle{}erreur.
 \end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Il faut que i soit inférieur à la taille du tableau. Sinon, la fonction renvoie 0. 
+\end{DoxyPrecond}
 \mbox{\Hypertarget{tabvar1_8h_a349e9396042075f2ea85432b24c30f67}\label{tabvar1_8h_a349e9396042075f2ea85432b24c30f67}} 
 \index{tabvar1.h@{tabvar1.h}!len@{len}}
 \index{len@{len}!tabvar1.h@{tabvar1.h}}
@@ -133,11 +116,11 @@ Retourne la taille effective du tableau.
 
 
 \begin{DoxyParams}{Paramètres}
-{\em } & \\
+{\em p} & Pointeur vers le tableau \\
 \hline
 \end{DoxyParams}
-a p \begin{DoxyReturn}{Renvoie}
-int 
+\begin{DoxyReturn}{Renvoie}
+int Taille effective du tableau 
 \end{DoxyReturn}
 \mbox{\Hypertarget{tabvar1_8h_ae5bc055cd2b949714014cd8e3e694092}\label{tabvar1_8h_ae5bc055cd2b949714014cd8e3e694092}} 
 \index{tabvar1.h@{tabvar1.h}!len\_max@{len\_max}}
@@ -147,15 +130,15 @@ int
 
 
 
-renvoie la longeur maximum du tableau. 
+Retourne la taille maximale du tableau. 
 
 
 \begin{DoxyParams}{Paramètres}
-{\em } & \\
+{\em p} & Pointeur vers le tableau \\
 \hline
 \end{DoxyParams}
-a p \begin{DoxyReturn}{Renvoie}
-int taille maximum du tableau. 
+\begin{DoxyReturn}{Renvoie}
+int Taille maximale du tableau 
 \end{DoxyReturn}
 \mbox{\Hypertarget{tabvar1_8h_a5687a2c104d55ebe1c41ef217781399f}\label{tabvar1_8h_a5687a2c104d55ebe1c41ef217781399f}} 
 \index{tabvar1.h@{tabvar1.h}!make@{make}}
@@ -165,15 +148,15 @@ int taille maximum du tableau.
 
 
 
-Cree un tableau de taille variable. 
+Crée un tableau de taille variable. 
 
 
 \begin{DoxyParams}{Paramètres}
-{\em } & \\
+{\em tmax} & Taille maximale du tableau \\
 \hline
 \end{DoxyParams}
-a tmax \begin{DoxyReturn}{Renvoie}
-tab\+\_\+t$\ast$ un tableau de taille variable. 
+\begin{DoxyReturn}{Renvoie}
+tab\+\_\+t$\ast$ Pointeur vers un tableau de taille variable 
 \end{DoxyReturn}
 \mbox{\Hypertarget{tabvar1_8h_a5846ddc7c948c175393400ecd220f946}\label{tabvar1_8h_a5846ddc7c948c175393400ecd220f946}} 
 \index{tabvar1.h@{tabvar1.h}!print@{print}}
@@ -183,14 +166,14 @@ tab\+\_\+t$\ast$ un tableau de taille variable.
 
 
 
-Affiche le tableau. 
+Affiche le contenu du tableau. 
 
 
 \begin{DoxyParams}{Paramètres}
-{\em } & \\
+{\em p} & Pointeur vers le tableau \\
 \hline
 \end{DoxyParams}
-a p \mbox{\Hypertarget{tabvar1_8h_a4389c16e185b652e828f5371e2b66063}\label{tabvar1_8h_a4389c16e185b652e828f5371e2b66063}} 
+\mbox{\Hypertarget{tabvar1_8h_a4389c16e185b652e828f5371e2b66063}\label{tabvar1_8h_a4389c16e185b652e828f5371e2b66063}} 
 \index{tabvar1.h@{tabvar1.h}!rmv@{rmv}}
 \index{rmv@{rmv}!tabvar1.h@{tabvar1.h}}
 \doxysubsubsection{\texorpdfstring{rmv()}{rmv()}}
@@ -198,13 +181,16 @@ a p \mbox{\Hypertarget{tabvar1_8h_a4389c16e185b652e828f5371e2b66063}\label{tabva
 
 
 
-Supprime la derniere valeur du tableau. 
+Supprime la dernière valeur du tableau. 
 
 
 \begin{DoxyParams}{Paramètres}
-{\em } & \\
+{\em p} & Pointeur vers le tableau \\
 \hline
 \end{DoxyParams}
-a p \begin{DoxyReturn}{Renvoie}
-int 1 si la suppression a reussi, 0 sinon. 
+\begin{DoxyReturn}{Renvoie}
+int 1 si la suppression a réussi, 0 sinon.
 \end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Il ne faut pas que le tableau soit vide. 
+\end{DoxyPrecond}

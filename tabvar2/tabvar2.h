@@ -1,8 +1,8 @@
 /**
- * \file tabVar1.h
+ * \file tabvar2.h
  * \author Matthieu Gaudel (matthieu.gaudel9@etu.univ-lorraine.fr)
- * \brief Bibliothèque pour les tableaux
- * \version 0.1
+ * \brief Bibliothèque pour les tableaux de taille variable.
+ * \version 2.0
  * \date 2023-02-09
  * 
  * \copyright Copyright (c) 2023
@@ -16,15 +16,15 @@
 #include <stdlib.h>
 
 /**
- * \struct tab
+ * \struct tab 
  * \typedef tab_t
  * \brief Tableau de taille variable.
  */
 struct tab
 {
-    int size_max; // Taille maximale du tableau
-    int size;     // Taille effective du tableau
-    int* tab;     // Tableau d'entiers
+    int size_max; /** Taille maximale du tableau */
+    int size;     /** Taille effective du tableau */
+    int* tab;     /** Tableau d'entiers */
 };
 typedef struct tab tab_t;
 
@@ -33,8 +33,6 @@ typedef struct tab tab_t;
  * 
  * \param tmax Taille maximale du tableau
  * \return tab_t* Pointeur vers un tableau de taille variable
- * 
- * \example tab_t *p = make(10);
  */
 tab_t *make(int tmax);
 
@@ -42,8 +40,6 @@ tab_t *make(int tmax);
  * \brief Affiche le contenu du tableau.
  * 
  * \param p Pointeur vers le tableau
- * 
- * \example print(p) = [1, 2, 3, 4, 5] 
  */
 void print(tab_t *p);
 
@@ -52,8 +48,6 @@ void print(tab_t *p);
  * 
  * \param p Pointeur vers le tableau
  * \return int Taille effective du tableau
- * 
- * \example len(p) = 5
  */
 int len(tab_t *p);
 
@@ -62,8 +56,6 @@ int len(tab_t *p);
  * 
  * \param p Pointeur vers le tableau
  * \return int Taille maximale du tableau
- * 
- * \example len_max(p) = 10 si tab_t *p = make(10);
  */
 int len_max(tab_t *p);
 
@@ -74,9 +66,8 @@ int len_max(tab_t *p);
  * \param v Valeur à ajouter
  * \return int 1 si l'ajout a réussi, 0 sinon.
  * 
- * \warning Si le tableau est plein, la fonction renvoie 0.
+ * \pre Il ne faut pas que le tableau soit plein.
  * 
- * \example add(p, 6) = [1, 2, 3, 4, 5, 6] si avant p = [1, 2, 3, 4, 5]
  */
 int add(tab_t *p, int v);
 
@@ -86,8 +77,6 @@ int add(tab_t *p, int v);
  * \param p Pointeur vers le tableau
  * \param v Valeur à ajouter
  * \param n Nombre de fois où la valeur est ajoutée
- * 
- * \example fill_tab(p, 6, 3) = [6,6,6] si avant p = [] 
  */
 void fill_tab(tab_t *p, int v, int n);
 
@@ -97,9 +86,7 @@ void fill_tab(tab_t *p, int v, int n);
  * \param p Pointeur vers le tableau
  * \return int 1 si la suppression a réussi, 0 sinon.
  * 
- * \warning Si le tableau est vide, la fonction renvoie 0.
- * 
- * \example rmv(p) = [1, 2, 3, 4] si avant p = [1, 2, 3, 4, 5]
+ * \pre Il ne faut pas que le tableau soit vide.
  */
 int rmv(tab_t *p);
 
@@ -115,9 +102,7 @@ int rmv(tab_t *p);
  *         1 : suppression réussie
  *         0 : échec (i supérieur ou égal à la taille du tableau)
  * 
- * \warning Il faut que i soit inférieur à la taille du tableau. Sinon, la fonction renvoie 0.
- * 
- * \example rmv_to(p, 2) = [1, 2, 3] si avant p = [1, 2, 3, 4, 5]
+ * \pre Il faut que i soit inférieur à la taille du tableau. Sinon, la fonction renvoie 0.
  */
 int rmv_to(tab_t *p, int i);
 
@@ -129,9 +114,8 @@ int rmv_to(tab_t *p, int i);
  * 
  * \return La valeur à l'indice i ou 0 en cas d'erreur.
  * 
- * \warning Il faut que i soit inférieur à la taille du tableau. Sinon, la fonction renvoie 0.
+ * \pre Il faut que i soit inférieur à la taille du tableau. Sinon, la fonction renvoie 0.
  * 
- * \example get(p, 2) = 3 si p = [1, 2, 3, 4, 5]
  */
 int get(tab_t *p, int i);
 

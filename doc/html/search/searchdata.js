@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "afgjlmprst",
   1: "t",
   2: "ft",
-  3: "aglmpr",
+  3: "afglmprs",
   4: "st",
   5: "t",
   6: "j"

@@ -1,0 +1,311 @@
+\hypertarget{tabvar2_8h}{}\doxysection{Référence du fichier C\+:/\+Users/matlo/\+Documents/worflow/\+Jeu-\/des-\/allumettes-\/\+TP/tabvar2/tabvar2.h}
+\label{tabvar2_8h}\index{C:/Users/matlo/Documents/worflow/Jeu-\/des-\/allumettes-\/TP/tabvar2/tabvar2.h@{C:/Users/matlo/Documents/worflow/Jeu-\/des-\/allumettes-\/TP/tabvar2/tabvar2.h}}
+
+
+Bibliothèque pour les tableaux de taille variable.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtab}{tab}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{tabvar2_8h_ad0ce5562fa7e15704318c456c4289c07}\label{tabvar2_8h_ad0ce5562fa7e15704318c456c4289c07}} 
+typedef struct \mbox{\hyperlink{structtab}{tab}} {\bfseries tab\+\_\+t}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$ \mbox{\hyperlink{tabvar2_8h_a5687a2c104d55ebe1c41ef217781399f}{make}} (int tmax)
+\begin{DoxyCompactList}\small\item\em Crée un tableau de taille variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tabvar2_8h_a5846ddc7c948c175393400ecd220f946}{print}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Affiche le contenu du tableau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tabvar2_8h_a349e9396042075f2ea85432b24c30f67}{len}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Retourne la taille effective du tableau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tabvar2_8h_ae5bc055cd2b949714014cd8e3e694092}{len\+\_\+max}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Retourne la taille maximale du tableau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tabvar2_8h_a9fa9363283cf936decd4e45a1dec48aa}{add}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p, int v)
+\begin{DoxyCompactList}\small\item\em Ajoute une valeur au tableau. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tabvar2_8h_a1377e6c105a4b836b9182002af2b0e7f}{fill\+\_\+tab}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p, int v, int n)
+\begin{DoxyCompactList}\small\item\em Remplit le tableau avec la valeur v jusqu\textquotesingle{}à la taille n. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tabvar2_8h_a4389c16e185b652e828f5371e2b66063}{rmv}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Supprime la dernière valeur du tableau. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tabvar2_8h_a5ef855b7eb1e4aa870aa9e0481e09962}{rmv\+\_\+to}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p, int i)
+\begin{DoxyCompactList}\small\item\em Supprime les valeurs jusqu\textquotesingle{}à l\textquotesingle{}indice i. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tabvar2_8h_a841c753d0564b000cff721c736e6633b}{get}} (\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$p, int i)
+\begin{DoxyCompactList}\small\item\em Retourne la valeur à l\textquotesingle{}indice i. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Bibliothèque pour les tableaux de taille variable. 
+
+\begin{DoxyAuthor}{Auteur}
+Matthieu Gaudel (\href{mailto:matthieu.gaudel9@etu.univ-lorraine.fr}{\texttt{ matthieu.\+gaudel9@etu.\+univ-\/lorraine.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/09
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{tabvar2_8h_a9fa9363283cf936decd4e45a1dec48aa}\label{tabvar2_8h_a9fa9363283cf936decd4e45a1dec48aa}} 
+\index{tabvar2.h@{tabvar2.h}!add@{add}}
+\index{add@{add}!tabvar2.h@{tabvar2.h}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily int add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$}]{p,  }\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Ajoute une valeur au tableau. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Pointeur vers le tableau \\
+\hline
+{\em v} & Valeur à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 1 si l\textquotesingle{}ajout a réussi, 0 sinon.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Il ne faut pas que le tableau soit plein.
+\end{DoxyPrecond}
+
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Pointeur vers le tableau \\
+\hline
+{\em v} & Valeur à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 1 si l\textquotesingle{}ajout a réussi, 0 sinon.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Il ne faut pas que le tableau soit plein. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{tabvar2_8h_a1377e6c105a4b836b9182002af2b0e7f}\label{tabvar2_8h_a1377e6c105a4b836b9182002af2b0e7f}} 
+\index{tabvar2.h@{tabvar2.h}!fill\_tab@{fill\_tab}}
+\index{fill\_tab@{fill\_tab}!tabvar2.h@{tabvar2.h}}
+\doxysubsubsection{\texorpdfstring{fill\_tab()}{fill\_tab()}}
+{\footnotesize\ttfamily void fill\+\_\+tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$}]{p,  }\item[{int}]{v,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Remplit le tableau avec la valeur v jusqu\textquotesingle{}à la taille n. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Pointeur vers le tableau \\
+\hline
+{\em v} & Valeur à ajouter \\
+\hline
+{\em n} & Nombre de fois où la valeur est ajoutée \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tabvar2_8h_a841c753d0564b000cff721c736e6633b}\label{tabvar2_8h_a841c753d0564b000cff721c736e6633b}} 
+\index{tabvar2.h@{tabvar2.h}!get@{get}}
+\index{get@{get}!tabvar2.h@{tabvar2.h}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily int get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$}]{p,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retourne la valeur à l\textquotesingle{}indice i. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Un pointeur vers le tableau. \\
+\hline
+{\em i} & L\textquotesingle{}indice de la valeur à récupérer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La valeur à l\textquotesingle{}indice i ou 0 en cas d\textquotesingle{}erreur.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Il faut que i soit inférieur à la taille du tableau. Sinon, la fonction renvoie 0.
+\end{DoxyPrecond}
+
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Un pointeur vers le tableau. \\
+\hline
+{\em i} & L\textquotesingle{}indice de la valeur à récupérer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La valeur à l\textquotesingle{}indice i ou 0 en cas d\textquotesingle{}erreur.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Il faut que i soit inférieur à la taille du tableau. Sinon, la fonction renvoie 0. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{tabvar2_8h_a349e9396042075f2ea85432b24c30f67}\label{tabvar2_8h_a349e9396042075f2ea85432b24c30f67}} 
+\index{tabvar2.h@{tabvar2.h}!len@{len}}
+\index{len@{len}!tabvar2.h@{tabvar2.h}}
+\doxysubsubsection{\texorpdfstring{len()}{len()}}
+{\footnotesize\ttfamily int len (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Retourne la taille effective du tableau. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Pointeur vers le tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int Taille effective du tableau
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Pointeur vers le tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int Taille effective du tableau 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tabvar2_8h_ae5bc055cd2b949714014cd8e3e694092}\label{tabvar2_8h_ae5bc055cd2b949714014cd8e3e694092}} 
+\index{tabvar2.h@{tabvar2.h}!len\_max@{len\_max}}
+\index{len\_max@{len\_max}!tabvar2.h@{tabvar2.h}}
+\doxysubsubsection{\texorpdfstring{len\_max()}{len\_max()}}
+{\footnotesize\ttfamily int len\+\_\+max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Retourne la taille maximale du tableau. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Pointeur vers le tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int Taille maximale du tableau
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Pointeur vers le tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int Taille maximale du tableau 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tabvar2_8h_a5687a2c104d55ebe1c41ef217781399f}\label{tabvar2_8h_a5687a2c104d55ebe1c41ef217781399f}} 
+\index{tabvar2.h@{tabvar2.h}!make@{make}}
+\index{make@{make}!tabvar2.h@{tabvar2.h}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$ make (\begin{DoxyParamCaption}\item[{int}]{tmax }\end{DoxyParamCaption})}
+
+
+
+Crée un tableau de taille variable. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tmax} & Taille maximale du tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+tab\+\_\+t$\ast$ Pointeur vers un tableau de taille variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tabvar2_8h_a5846ddc7c948c175393400ecd220f946}\label{tabvar2_8h_a5846ddc7c948c175393400ecd220f946}} 
+\index{tabvar2.h@{tabvar2.h}!print@{print}}
+\index{print@{print}!tabvar2.h@{tabvar2.h}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Affiche le contenu du tableau. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Pointeur vers le tableau\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Pointeur vers le tableau \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tabvar2_8h_a4389c16e185b652e828f5371e2b66063}\label{tabvar2_8h_a4389c16e185b652e828f5371e2b66063}} 
+\index{tabvar2.h@{tabvar2.h}!rmv@{rmv}}
+\index{rmv@{rmv}!tabvar2.h@{tabvar2.h}}
+\doxysubsubsection{\texorpdfstring{rmv()}{rmv()}}
+{\footnotesize\ttfamily int rmv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Supprime la dernière valeur du tableau. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Pointeur vers le tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 1 si la suppression a réussi, 0 sinon.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Il ne faut pas que le tableau soit vide.
+\end{DoxyPrecond}
+
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Pointeur vers le tableau \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 1 si la suppression a réussi, 0 sinon.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Il ne faut pas que le tableau soit vide. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{tabvar2_8h_a5ef855b7eb1e4aa870aa9e0481e09962}\label{tabvar2_8h_a5ef855b7eb1e4aa870aa9e0481e09962}} 
+\index{tabvar2.h@{tabvar2.h}!rmv\_to@{rmv\_to}}
+\index{rmv\_to@{rmv\_to}!tabvar2.h@{tabvar2.h}}
+\doxysubsubsection{\texorpdfstring{rmv\_to()}{rmv\_to()}}
+{\footnotesize\ttfamily int rmv\+\_\+to (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{tabvar1_8h_af18c5180c2216f47912bd9c02bc99a1c}{tab\+\_\+t}} $\ast$}]{p,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Supprime les valeurs jusqu\textquotesingle{}à l\textquotesingle{}indice i. 
+
+Cette fonction est utilisée dans le jeu des allumettes.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Un pointeur vers le tableau à modifier. \\
+\hline
+{\em i} & L\textquotesingle{}indice jusqu\textquotesingle{}où supprimer les valeurs (exclu).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un entier indiquant si la suppression s\textquotesingle{}est bien passée. 1 \+: suppression réussie 0 \+: échec (i supérieur ou égal à la taille du tableau)
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Précondition}
+Il faut que i soit inférieur à la taille du tableau. Sinon, la fonction renvoie 0. 
+\end{DoxyPrecond}

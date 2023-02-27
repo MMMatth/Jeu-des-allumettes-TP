@@ -35,5 +35,4 @@ var menudata={children:[
 {text:"Variables globale",url:"globals.html",children:[
 {text:"Tout",url:"globals.html"},
 {text:"Fonctions",url:"globals_func.html"},
-{text:"Définitions de type",url:"globals_type.html"}]}]},
-{text:"Exemples",url:"examples.html"}]}
+{text:"Définitions de type",url:"globals_type.html"}]}]}]}
