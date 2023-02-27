@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "tabVar1.h"
+#include "tabvar1.h"
 
 int main(){
     tab_t *t = make(0);

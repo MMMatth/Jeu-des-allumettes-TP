@@ -30,4 +30,4 @@ Donc on peut utiliser cette bibliothèque pour la grille de jeu et les navires a
 - [x] int atoi(char * s);
 - [x]  Proposer de nouvelles fonctions à ajouter à la bibliothèque permettant de simplifier la programmation du jeu des allumettes. Attention : ces fonctions doivent rester générales !
 - [x] Proposer un autre jeu ou programme qui pourrait utiliser cette bibliothèque. L’implémentation n’est pas nécessaire.
-- [ ] Si le temps le permet, proposer et implémenter des extensions au jeu des allumettes.
+- [x] Si le temps le permet, proposer et implémenter des extensions au jeu des allumettes.

@@ -3,8 +3,8 @@
 #include <stdbool.h>
 #include <time.h>
 
-#include "../tabvar2/tabvar2.h"
-#include "fonction.h"
+#include "tabvar2/tabvar2.h"
+#include "f_jeu/fonction.h"
 
 int main(int argc, char *argv[]) {
     // Initialisation des variables

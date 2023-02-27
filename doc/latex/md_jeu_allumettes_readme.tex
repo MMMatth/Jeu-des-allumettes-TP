@@ -1,0 +1,26 @@
+\hypertarget{md_jeu_allumettes_readme_autotoc_md1}{}\doxysection{Présentation du TP}\label{md_jeu_allumettes_readme_autotoc_md1}
+Ce projet a pour but de créer une bibliothèque permettant de simplifier la programmation de jeux utilisant des tableaux de taille variable. Cette bibliothèque sera utilisée pour implémenter le jeu des allumettes. Le projet est réalisé dans le cadre du cours de programmation en C de l\textquotesingle{}Université de Lorraine.\hypertarget{md_jeu_allumettes_readme_autotoc_md2}{}\doxysection{Jeux des allumettes}\label{md_jeu_allumettes_readme_autotoc_md2}
+\hypertarget{md_jeu_allumettes_readme_autotoc_md3}{}\doxysubsection{Présentation du jeux}\label{md_jeu_allumettes_readme_autotoc_md3}
+Le jeu des allumettes est un jeu de réflexion se jouant à deux joueurs. Le jeu se joue avec n allumettes au départ. Les joueurs jouent à tour de rôle. À son tour, un joueur doit enlever entre une et trois allumettes. Le joueur qui prend la dernière allumette a perdu.\hypertarget{md_jeu_allumettes_readme_autotoc_md4}{}\doxysection{Exemple de jeu qui peut utiliser cette bibliothèque}\label{md_jeu_allumettes_readme_autotoc_md4}
+\hypertarget{md_jeu_allumettes_readme_autotoc_md5}{}\doxysubsection{La bataille navale}\label{md_jeu_allumettes_readme_autotoc_md5}
+La bataille navale est un jeu pour deux joueurs. Chaque joueur place ses navires sur une grille de dimensions généralement 10x10, sans que l\textquotesingle{}adversaire ne les voit. Les joueurs tirent tour à tour des missiles sur les cases de la grille ennemie en tentant de toucher les navires adverses. Si un joueur touche une case occupée par un navire ennemi, il peut continuer à tirer jusqu\textquotesingle{}à ce qu\textquotesingle{}il manque sa cible. Le premier joueur à couler tous les navires ennemis remporte la partie. Donc on peut utiliser cette bibliothèque pour la grille de jeu et les navires avec un tableau à deux dimension.\hypertarget{md_jeu_allumettes_readme_autotoc_md6}{}\doxysection{Nouvelle fonctionnalité dans la bibliothèque tabvar2.\+h}\label{md_jeu_allumettes_readme_autotoc_md6}
+
+\begin{DoxyItemize}
+\item une fonction rmv\+\_\+to pour enlever plusieur elements de la liste
+\item une fonction fill\+\_\+tab pour remplir le tableau avec une valeur donnée
+\end{DoxyItemize}\hypertarget{md_jeu_allumettes_readme_autotoc_md7}{}\doxysection{Nouvelle fonctionnalité dans le jeux des allumettes}\label{md_jeu_allumettes_readme_autotoc_md7}
+
+\begin{DoxyItemize}
+\item l\textquotesingle{}affichage du jeux sous la forme de batton
+\item historique des perdant dans un fichier txt
+\item j\textquotesingle{}affiche les regles du jeux si le joueur le demande
+\end{DoxyItemize}\hypertarget{md_jeu_allumettes_readme_autotoc_md8}{}\doxysection{To do list \+:}\label{md_jeu_allumettes_readme_autotoc_md8}
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Utiliser le argv
+\item \mbox{[}x\mbox{]} transformer tableau 0 1 et tableau 1 2
+\item \mbox{[}x\mbox{]} int atoi(char $\ast$ s);
+\item \mbox{[}x\mbox{]} Proposer de nouvelles fonctions à ajouter à la bibliothèque permettant de simplifier la programmation du jeu des allumettes. Attention \+: ces fonctions doivent rester générales !
+\item \mbox{[}x\mbox{]} Proposer un autre jeu ou programme qui pourrait utiliser cette bibliothèque. L’implémentation n’est pas nécessaire.
+\item \mbox{[}x\mbox{]} Si le temps le permet, proposer et implémenter des extensions au jeu des allumettes. 
+\end{DoxyItemize}

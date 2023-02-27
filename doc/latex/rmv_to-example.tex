@@ -1,0 +1,27 @@
+\hypertarget{rmv_to-example}{}\doxysection{rmv\+\_\+to}
+Supprime les valeurs jusqu\textquotesingle{}à l\textquotesingle{}indice i.
+
+Supprime les valeurs jusqu\textquotesingle{}à l\textquotesingle{}indice i.
+
+Cette fonction est utilisée dans le jeu des allumettes.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p} & Un pointeur vers le tableau à modifier. \\
+\hline
+{\em i} & L\textquotesingle{}indice jusqu\textquotesingle{}où supprimer les valeurs (exclu).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un entier indiquant si la suppression s\textquotesingle{}est bien passée. 1 \+: suppression réussie 0 \+: échec (i supérieur ou égal à la taille du tableau)
+\end{DoxyReturn}
+\begin{DoxyWarning}{Avertissement}
+Il faut que i soit inférieur à la taille du tableau. Sinon, la fonction renvoie 0.
+\end{DoxyWarning}
+(p, 2) = \mbox{[}1, 2, 3\mbox{]} si avant p = \mbox{[}1, 2, 3, 4, 5\mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ 
